@@ -6,12 +6,20 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Ubiquity\\' => array($vendorDir . '/phpmv/ubiquity-attributes/src/Ubiquity', $vendorDir . '/phpmv/ubiquity/src/Ubiquity', $vendorDir . '/phpmv/ubiquity-debug/src/Ubiquity', $vendorDir . '/phpmv/ubiquity-dev/src/Ubiquity', $vendorDir . '/phpmv/ubiquity-webtools/src/Ubiquity'),
+    'phpseclib3\\' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
+    'Ubiquity\\' => array($vendorDir . '/phpmv/ubiquity/src/Ubiquity', $vendorDir . '/phpmv/ubiquity-attributes/src/Ubiquity', $vendorDir . '/phpmv/ubiquity-debug/src/Ubiquity', $vendorDir . '/phpmv/ubiquity-dev/src/Ubiquity', $vendorDir . '/phpmv/ubiquity-webtools/src/Ubiquity'),
     'Twig\\' => array($vendorDir . '/twig/twig/src'),
     'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
     'Symfony\\Polyfill\\Ctype\\' => array($vendorDir . '/symfony/polyfill-ctype'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
+    'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src', $vendorDir . '/psr/http-factory/src'),
+    'Psr\\Http\\Client\\' => array($vendorDir . '/psr/http-client/src'),
+    'ParagonIE\\ConstantTime\\' => array($vendorDir . '/paragonie/constant_time_encoding/src'),
+    'PHPMV\\' => array($vendorDir . '/phpmv/php-ssh-proxmox/src/PHPMV'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),
+    'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
+    'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),
+    'GuzzleHttp\\' => array($vendorDir . '/guzzlehttp/guzzle/src'),
     'Ajax\\' => array($vendorDir . '/phpmv/php-mv-ui/Ajax'),
     '' => array($baseDir . '/app'),
 );

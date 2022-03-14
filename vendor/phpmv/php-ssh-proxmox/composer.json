@@ -1,0 +1,34 @@
+{
+  "name": "phpmv/php-ssh-proxmox",
+  "description": "A php library running with SSH for proxmox querying",
+  "type": "library",
+  "keywords": [
+    "php",
+    "framework",
+    "ssh",
+    "proxmox"
+  ],
+  "require": {
+    "php": ">=8.0",
+    "phpseclib/phpseclib": "^3.0",
+    "mrkampf/proxmox-ve": "^0.4.1"
+  },
+  "license": "Apache-2.0",
+  "authors": [
+    {
+      "name": "Jean-Christophe HERON",
+      "email": "myaddressmail@gmail.com",
+      "role": "Lead developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+       "PHPMV\\": "src/PHPMV/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.0.x-dev"
+    }
+  }
+}

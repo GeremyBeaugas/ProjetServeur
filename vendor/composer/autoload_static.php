@@ -7,11 +7,20 @@ namespace Composer\Autoload;
 class ComposerStaticInit945b1ee4e27f2f7cc8a4370a76c4c0ff
 {
     public static $files = array (
-        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
+        '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
+        'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
+        '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'p' => 
+        array (
+            'phpseclib3\\' => 11,
+        ),
         'U' => 
         array (
             'Ubiquity\\' => 9,
@@ -28,10 +37,20 @@ class ComposerStaticInit945b1ee4e27f2f7cc8a4370a76c4c0ff
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'Psr\\Http\\Message\\' => 17,
+            'Psr\\Http\\Client\\' => 16,
+            'ParagonIE\\ConstantTime\\' => 23,
+            'PHPMV\\' => 6,
         ),
         'M' => 
         array (
             'Monolog\\' => 8,
+        ),
+        'G' => 
+        array (
+            'GuzzleHttp\\Psr7\\' => 16,
+            'GuzzleHttp\\Promise\\' => 19,
+            'GuzzleHttp\\' => 11,
         ),
         'A' => 
         array (
@@ -40,10 +59,14 @@ class ComposerStaticInit945b1ee4e27f2f7cc8a4370a76c4c0ff
     );
 
     public static $prefixDirsPsr4 = array (
+        'phpseclib3\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+        ),
         'Ubiquity\\' => 
         array (
-            0 => __DIR__ . '/..' . '/phpmv/ubiquity-attributes/src/Ubiquity',
-            1 => __DIR__ . '/..' . '/phpmv/ubiquity/src/Ubiquity',
+            0 => __DIR__ . '/..' . '/phpmv/ubiquity/src/Ubiquity',
+            1 => __DIR__ . '/..' . '/phpmv/ubiquity-attributes/src/Ubiquity',
             2 => __DIR__ . '/..' . '/phpmv/ubiquity-debug/src/Ubiquity',
             3 => __DIR__ . '/..' . '/phpmv/ubiquity-dev/src/Ubiquity',
             4 => __DIR__ . '/..' . '/phpmv/ubiquity-webtools/src/Ubiquity',
@@ -64,9 +87,38 @@ class ComposerStaticInit945b1ee4e27f2f7cc8a4370a76c4c0ff
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
         ),
+        'Psr\\Http\\Message\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+        ),
+        'Psr\\Http\\Client\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/http-client/src',
+        ),
+        'ParagonIE\\ConstantTime\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paragonie/constant_time_encoding/src',
+        ),
+        'PHPMV\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmv/php-ssh-proxmox/src/PHPMV',
+        ),
         'Monolog\\' => 
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
+        ),
+        'GuzzleHttp\\Psr7\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
+        ),
+        'GuzzleHttp\\Promise\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
+        ),
+        'GuzzleHttp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
         'Ajax\\' => 
         array (
@@ -76,6 +128,16 @@ class ComposerStaticInit945b1ee4e27f2f7cc8a4370a76c4c0ff
 
     public static $fallbackDirsPsr4 = array (
         0 => __DIR__ . '/../..' . '/app',
+    );
+
+    public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'Proxmox' => 
+            array (
+                0 => __DIR__ . '/..' . '/mrkampf/proxmox-ve/src',
+            ),
+        ),
     );
 
     public static $classMap = array (
@@ -91,6 +153,7 @@ class ComposerStaticInit945b1ee4e27f2f7cc8a4370a76c4c0ff
             $loader->prefixLengthsPsr4 = ComposerStaticInit945b1ee4e27f2f7cc8a4370a76c4c0ff::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit945b1ee4e27f2f7cc8a4370a76c4c0ff::$prefixDirsPsr4;
             $loader->fallbackDirsPsr4 = ComposerStaticInit945b1ee4e27f2f7cc8a4370a76c4c0ff::$fallbackDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit945b1ee4e27f2f7cc8a4370a76c4c0ff::$prefixesPsr0;
             $loader->classMap = ComposerStaticInit945b1ee4e27f2f7cc8a4370a76c4c0ff::$classMap;
 
         }, null, ClassLoader::class);

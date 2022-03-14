@@ -6,4 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Proxmox' => array($vendorDir . '/mrkampf/proxmox-ve/src'),
 );

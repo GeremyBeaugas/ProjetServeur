@@ -1,10 +1,15 @@
 <?php
 namespace controllers;
 
+use models\Serveur;
+use PHPMV\ProxmoxApi;
+use PHPMV\ProxmoxMaster;
+use Ubiquity\attributes\items\router\Route;
 use Ubiquity\controllers\auth\AuthController;
 use Ubiquity\controllers\auth\WithAuthTrait;
 use Ubiquity\core\postinstall\Display;
 use Ubiquity\log\Logger;
+use Ubiquity\orm\DAO;
 use Ubiquity\themes\ThemesManager;
 
 /**
@@ -39,4 +44,15 @@ class IndexController extends ControllerBase {
 			$this->forward(IndexController::class);
 		}
 	}
+    #[Route('vms')]
+    public function vms(){
+        $server=DAO::getById(Serveur::class,1);
+        $proxmox=new ProxmoxApi($server->getIpAddress(),$server->getLogin(),$server->getPassword());
+        $vms=$proxmox->getVMs();
+        $dt=$this->jquery->semantic()->dataTable('dt-vms',\stdClass::class,$vms);
+        $dt->setFields(ProxmoxMaster::VM_FIELDS);
+        $dt->setHasCheckboxes(true);
+        $this->jquery->renderDefaultView();
+
+    }
 }
