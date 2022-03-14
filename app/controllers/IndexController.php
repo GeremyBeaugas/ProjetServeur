@@ -16,7 +16,7 @@ class IndexController extends ControllerBase {
         return new BasicAuthController($this);
     }
 	public function index() {
-		$defaultPage = Display::getDefaultPage();
+		/* $defaultPage = Display::getDefaultPage();
 		$links = Display::getLinks();
 		$infos = Display::getPageInfos();
 
@@ -25,7 +25,8 @@ class IndexController extends ControllerBase {
 		if (\count($themes) > 0) {
 			$this->loadView('@activeTheme/main/vMenu.html', \compact('themes', 'activeTheme'));
 		}
-		$this->loadView($defaultPage, \compact('defaultPage', 'links', 'infos', 'activeTheme'));
+		$this->loadView($defaultPage, \compact('defaultPage', 'links', 'infos', 'activeTheme'));*/
+        $this->loadView("test.html");
 	}
 
 	public function ct($theme) {

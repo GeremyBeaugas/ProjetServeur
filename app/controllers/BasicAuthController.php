@@ -30,7 +30,7 @@ class BasicAuthController extends \Ubiquity\controllers\auth\AuthController {
         if (URequest::isPost()) {
             $email = URequest::post($this->_getLoginInputName());
             $password = URequest::post($this->_getPasswordInputName());
-            $user=DAO::getOne(User::class,'email= ?',[$email]);
+            $user=DAO::getOne(User::class,'login= ?',false,[$email]);
             if($user!=null){
                 if(URequest::password_verify($this->_getPasswordInputName(),$user->getPassword())){
                     return $user;
@@ -132,5 +132,7 @@ class BasicAuthController extends \Ubiquity\controllers\auth\AuthController {
         }
         return false;
     }
+
+
 
 }
