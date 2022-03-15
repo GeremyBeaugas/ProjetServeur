@@ -55,4 +55,16 @@ class IndexController extends ControllerBase {
         $this->jquery->renderDefaultView();
 
     }
+
+    #[Route('server')]
+    public function server(){
+        $server=DAO::getById(Serveur::class,1);
+        $proxmox=new ProxmoxApi($server->getIpAddress(),$server->getLogin(),$server->getPassword());
+        $listserver=$proxmox->getProxmox();
+        $dt=$this->jquery->semantic()->dataTable('dt-server',\stdClass::class,$listserver);
+        $dt->setFields(ProxmoxMaster::NAT_FIELDS);
+        $dt->setHasCheckboxes(true);
+        $this->jquery->renderDefaultView();
+
+    }
 }
