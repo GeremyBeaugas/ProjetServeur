@@ -1,6 +1,6 @@
-<div class="ui inverted segment">
-    <div class="ui medium header">Formulaire création serveur</div>
-    <div class="ui inverted form">
+<div class="ui segment">
+    <div class="ui medium header">Création d'un serveur</div>
+    <div class="ui form">
         <div class="two fields">
             <div class="field">
                 <label>Id Serveur</label>
@@ -22,57 +22,11 @@
             </div>
         </div>
         <div class="ui green submit button">Créer un serveur</div>
-        <div class="ui blue submit button">Ajouter une vm</div>
-        <div class="ui red submit button">Supprimer une vm</div>
+
     </div>
 </div>
-<div class="ui inverted segment">
-    <div class="ui medium header">Formulaire ajout vm</div>
-    <div class="ui inverted form">
-        <div class="three fields">
-            <div class="first field">
-                <label>Id Vm</label>
-                <input placeholder="Id" type="number">
-            </div>
-            <div class="second field">
-                <label>Number</label>
-                <input placeholder="Number" type="number">
-            </div>
-            <div class="third field">
-                <label>Nom</label>
-                <input placeholder="Nom" type="text">
-            </div>
-        </div>
-        <div class="three fields">
-            <div class="first field">
-                <label>Port SSH</label>
-                <input placeholder="Port SSH" type="number">
-            </div>
-            <div class="second field">
-                <label>Système d'exploitation<label>
-                <input placeholder="Système d'exploitation" type="text">
-            </div>
-            <div class="third field">
-                <label>Port SSH</label>
-                <input placeholder="Port SSH" type="number">
-            </div>
-
-        </div>
-        <div class="ui vertical menu">
-            <div class="ui dropdown item">
-                Categories
-                <i class="dropdown icon"></i>
-                <div class="menu">
-                    <a class="item">Electronics</a>
-
-                </div>
-            </div>
-        </div>
-        <div class="ui green submit button">Créer un serveur</div>
-        <div class="ui blue submit button">Ajouter une vm</div>
-        <div class="ui red submit button">Supprimer une vm</div>
-    </div>
-</div>
+<div class="ui blue submit button">Ajouter une vm</div>
+<div class="ui red submit button">Supprimer une vm</div>
 
 {{ q['dt-vms'] | raw }}
 {{ script_foot | raw }}

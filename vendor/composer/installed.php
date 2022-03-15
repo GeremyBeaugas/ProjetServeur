@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '19dfd1fde58f000caca39cd34a726e3ed08c09ed',
+        'reference' => '54268e3f36403d5b311a919d6249c31586ae47fb',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '19dfd1fde58f000caca39cd34a726e3ed08c09ed',
+            'reference' => '54268e3f36403d5b311a919d6249c31586ae47fb',
             'dev_requirement' => false,
         ),
         'czproject/git-php' => array(
@@ -157,6 +157,15 @@
             'aliases' => array(),
             'reference' => '60ee001b980a68e6481bd55476addc8dfc00c39f',
             'dev_requirement' => true,
+        ),
+        'phpmv/ubiquity-security' => array(
+            'pretty_version' => '0.0.5',
+            'version' => '0.0.5.0',
+            'type' => 'extension',
+            'install_path' => __DIR__ . '/../phpmv/ubiquity-security',
+            'aliases' => array(),
+            'reference' => 'b02c1342a07b24db9d5c19351c7e5dec1e0a946c',
+            'dev_requirement' => false,
         ),
         'phpmv/ubiquity-webtools' => array(
             'pretty_version' => '2.4.15',

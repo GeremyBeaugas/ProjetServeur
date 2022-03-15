@@ -4,7 +4,8 @@
         "twig\/twig": "^3.0",
         "phpmv\/ubiquity": "^2.3",
         "phpmv\/php-mv-ui": "^2.4",
-        "phpmv/php-ssh-proxmox": "dev-main"
+        "phpmv/php-ssh-proxmox": "dev-main",
+        "phpmv/ubiquity-security": "^0.0.5"
     },
     "require-dev": {
         "monolog\/monolog": "^2.2",

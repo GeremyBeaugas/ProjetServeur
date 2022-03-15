@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "556f319429036a34f0368914e99c0254",
+    "content-hash": "8ae4b07e3722744f3dc2aa1a9500bdcd",
     "packages": [
         {
             "name": "frameworks/jquery",
@@ -715,6 +715,60 @@
                 "source": "https://github.com/phpMv/ubiquity/tree/2.4.11"
             },
             "time": "2022-02-23T02:36:30+00:00"
+        },
+        {
+            "name": "phpmv/ubiquity-security",
+            "version": "0.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpMv/ubiquity-security.git",
+                "reference": "b02c1342a07b24db9d5c19351c7e5dec1e0a946c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpMv/ubiquity-security/zipball/b02c1342a07b24db9d5c19351c7e5dec1e0a946c",
+                "reference": "b02c1342a07b24db9d5c19351c7e5dec1e0a946c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.4"
+            },
+            "type": "extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ubiquity\\": "src/Ubiquity/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Jean-Christophe HERON",
+                    "email": "myaddressmail@gmail.com",
+                    "role": "Lead developer"
+                }
+            ],
+            "description": "Security module for Ubiquity framework",
+            "keywords": [
+                "framework",
+                "mvc",
+                "php",
+                "php-framework",
+                "security",
+                "tools"
+            ],
+            "support": {
+                "issues": "https://github.com/phpMv/ubiquity-security/issues",
+                "source": "https://github.com/phpMv/ubiquity-security/tree/0.0.5"
+            },
+            "time": "2022-01-01T14:34:20+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
